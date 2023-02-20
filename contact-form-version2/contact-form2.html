@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="../contact-form/general.css">
+    <link rel="stylesheet" href="../contact-form/typography.css">
+    <link rel="stylesheet" href="contact-form2.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h3 class="form-heading">Contact Us</h3>
+        <p class="form-description">Got a question? We'd love to hear from you. Send us a message and we'll respond as
+            soon as possible.</p>
+
+        <form>
+            <div class="form-input">
+                <label class="input-label" for="name">Name*</label>
+                <input class="input" id="name" type="text" required>
+            </div>
+
+            <div class="form-input">
+                <label class="input-label" for="email">Email address*</label>
+                <input class="input" id="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+
+            <div class="form-input">
+                <label class="input-label" for="message">Message</label>
+                <textarea class="message-input" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <input class="form-submit" type="submit" name="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+
+</html>
