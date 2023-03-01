@@ -1,0 +1,306 @@
+.page-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 400px repeat(2, auto) 300px auto 250px auto auto;
+}
+
+/* Styling for the page header  */
+.page-container .page-header {
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    background-image: url("../images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.page-container .page-header .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.page-container .page-header .navigation .navigation-logo {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.page-container .page-header .navigation .navigation-menu a {
+    text-decoration: none;
+    color: black;
+    margin-right: 12px;
+}
+
+.page-container .page-header .navigation .navigation-menu button {
+    margin-right: 12px;
+    padding: 12px 24px;
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.page-container .page-header .page-title {
+    text-align: center;
+    margin-top: 48px;
+    font-size: 56px;
+    letter-spacing: 4px;
+    color: white;
+}
+
+/* Styling for the page's first article */
+.page-container .brand-article {
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+    padding: 80px 52px;
+}
+
+.page-container .article-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.page-container .article-description {
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.page-container .article-link {
+    text-decoration-line: line-through;
+    text-decoration-thickness: 50%;
+    text-decoration-color: rgb(77,121,66, 0.3)
+}
+
+.page-container .brand-article-image {
+    grid-column: 7 / 13;
+    grid-row: 2 / 3;
+    background-image: url("../images/img2.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* Styling for the page's second article */
+.page-container .audience-article {
+    grid-column: 7 / 13;
+    grid-row: 3 / 4;
+    padding: 80px 52px;
+}
+
+.page-container .audience-article-image {
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    background-image: url("../images/img3.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* Styling for the page's two images with text */
+.page-container .graphic-design-image {
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 120px;
+    background-image: url("../images/img4.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.page-container .photography-image {
+    grid-column: 7 / 13;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 120px;
+    background-image: url("../images/img5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.page-container .image-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.page-container .image-description {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+/* Styling for the page's testimonials */
+.page-container .testimonials {
+    grid-column: 1 / 13;
+    grid-row: 5 / 6;
+    padding: 100px;
+}
+
+.page-container .testimonials .testimonials-title {
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 32px;
+}
+
+.page-container .testimonials .testimonials-container {
+    display: flex;
+}
+
+.page-container .testimonials .testimonials-container .testimonials-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.page-container .testimonials .testimonials-container .testimonials-item img {
+    margin-bottom: 32px;
+}
+
+.page-container .testimonials .testimonials-container .testimonials-item p {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.page-container .testimonials .testimonials-container .testimonials-item .testimonials-name {
+    font-weight: bold;
+}
+
+.page-container .testimonials .testimonials-container .testimonials-item .testimonials-job {
+    font-size: 12px;
+}
+
+/* Styling for the pages example images */
+.page-container .grass-blurry-image {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    background-image: url("../images/img6.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.page-container .close-up-leaf {
+    grid-column: 4 / 7;
+    grid-row: 6 / 7;
+    background-image: url("../images/img7.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.page-container .grass-sunny-image {
+    grid-column: 7 / 10;
+    grid-row: 6 / 7;
+    background-image: url("../images/img8.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.page-container .single-leaf {
+    grid-column: 10 / 13;
+    grid-row: 6 / 7;
+    background-image: url("../images/img9.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Form styling */
+.form-container {
+    grid-column: 1 / 13;
+    grid-row: 7 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 100px;
+    background-image: linear-gradient(to bottom, #7fa480, #5d9150);
+}
+
+.form-container .form-heading {
+    margin-bottom: 12px;
+    font-size: 44px;
+    font-weight: 500;
+    color: #256201;
+}
+
+.form-container .form-description {
+    text-align: center;
+    font-size: 16px;
+    color: #256201;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.form-container .form-input {
+    width: 324px;
+    margin-bottom: 16px;
+}
+
+.form-container .form-input .input-label {
+    display: block;
+    font-size: 12px;
+    color: #256201;
+}
+
+.form-container .form-input .input {
+    width: 100%;
+    height: 32px;
+}
+
+.form-container .form-input .message-input {
+    width: 100%;
+    height: 90px;
+}
+
+.form-container .form-submit {
+    width: 324px;
+    height: 32px;
+    background-color: #256201;
+    color: white;
+    border: 1px solid #16331a;
+    box-shadow: 2px 5px 13px #16331a;
+}
+
+
+/* Styling for the page's footer */
+.page-container .page-footer {
+    grid-column: 1 / 13;
+    grid-row: 8 / 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #5d9150;
+}
+
+.page-container .page-footer .footer-logo {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    color: #256201;
+}
+
+.page-container .page-footer .footer-menu-links {
+    margin-bottom: 48px;
+}
+
+.page-container .page-footer .footer-menu-links a {
+    color: #256201;
+    text-decoration: none;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.page-container .page-footer .footer-social-media-links a {
+    color: #256201;
+    text-decoration: none;
+    margin-right: 8px;
+    margin-left: 8px;
+}
