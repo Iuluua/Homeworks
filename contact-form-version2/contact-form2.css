@@ -10,36 +10,36 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 100px;
+    padding: 32px 100px;
     background-image: linear-gradient(to bottom, #472f82, #408fa2);
 }
 
 .form-container .form-heading {
-    margin-bottom: 10px;
-    font-size: 45px;
+    margin-bottom: 12px;
+    font-size: 44px;
     font-weight: 500;
 }
 
 .form-container .form-description {
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     width: 350px;
     margin-bottom: 20px;
 }
 
 .form-container .form-input {
     width: 324px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .form-container .form-input .input-label {
     display: block;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .form-container .form-input .input {
     width: 100%;
-    height: 30px;
+    height: 32px;
 }
 
 .form-container .form-input .message-input {
@@ -49,7 +49,7 @@ body {
 
 .form-container .form-submit {
     width: 324px;
-    height: 30px;
+    height: 32px;
     background-color: #0389ce;
     border: 1px solid #0178b6;
     box-shadow: 2px 5px 13px #276c87;
