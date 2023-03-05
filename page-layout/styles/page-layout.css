@@ -1,7 +1,7 @@
 .page-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 400px repeat(2, auto) 300px auto 250px auto auto;
+    grid-template-rows: 400px repeat(2, auto) 300px auto 250px repeat(2, auto);
 }
 
 /* Styling for the page header  */
@@ -58,7 +58,6 @@
 
 .page-container .article-title {
     font-size: 32px;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -222,7 +221,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 100px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     background-image: linear-gradient(to bottom, #7fa480, #5d9150);
 }
 
