@@ -160,13 +160,16 @@
     margin-right: 24px;
 }
 
-.page-container .testimonials .testimonials-container .testimonials-item img {
-    margin-bottom: 32px;
-}
-
 .page-container .testimonials .testimonials-container .testimonials-item p {
     margin-bottom: 32px;
     text-align: center;
+}
+
+.page-container .testimonials .testimonials-container .testimonials-item .testimonials-image {
+    width: 64px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 32px;
 }
 
 .page-container .testimonials .testimonials-container .testimonials-item .testimonials-name {
