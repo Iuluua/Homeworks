@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+    <script>
+        function play() {
+            var gamePossibilities = ["Rock", "Paper", "Scissors"];
+
+            var computerTurn = gamePossibilities[Math.floor(Math.random() * gamePossibilities.length)];
+            var userTurn = gamePossibilities[Math.floor(Math.random() * gamePossibilities.length)];
+
+            var winner;
+            //12 verificari
+            if (computerTurn === "Rock") {
+                if (userTurn === "Rock") {
+                    winner = "Nobody, Tie";
+                } else if (userTurn === "Paper") {
+                    winner = "User";
+                } else if (userTurn === "Scissors") {
+                    winner = "Computer";
+                }
+
+            } else if (computerTurn === "Paper") {
+                if (userTurn === "Rock") {
+                    winner = "Computer";
+                } else if (userTurn === "Paper") {
+                    winner = "Nobody, Tie";
+                } else if (userTurn === "Scissors") {
+                    winner = "User";
+                }
+                
+            } else if (computerTurn === "Scissors") {
+                if (userTurn === "Rock") {
+                    winner = "User";
+                } else if (userTurn === "Paper") {
+                    winner = "Computer";
+                } else if (userTurn === "Scissors") {
+                    winner = "Nobody, Tie";
+                }
+            }
+
+            var result = `Computer choice: "${computerTurn}"\nUser choice: "${userTurn}"\n\nThe winner is: ${winner}`;
+            return result;
+        }
+
+        console.log(play());
+    </script>
+</body>
+
+</html>
