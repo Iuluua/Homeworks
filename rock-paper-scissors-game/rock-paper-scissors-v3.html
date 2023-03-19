@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game Version 3</title>
+</head>
+
+<body>
+    <script>
+        function play() {
+            var GamePossibilities = {
+                Rock: "Rock",
+                Paper: "Paper",
+                Scissors: "Scissors"
+            };
+
+            var computerTurnIndex = Math.floor(Math.random() * Object.keys(GamePossibilities).length);
+            var userTurnIndex = Math.floor(Math.random() * Object.keys(GamePossibilities).length);
+
+            var computerTurn = Object.values(GamePossibilities)[computerTurnIndex];
+            var userTurn = Object.values(GamePossibilities)[userTurnIndex];
+
+            var result = `Computer choice: "${computerTurn}"\nUser choice: "${userTurn}"\n\nThe winner is: `;
+            var winner;
+            //10 verificari
+            if (computerTurn === userTurn) {
+                winner = "Nobody, Tie";
+                result = result + `${winner}`;
+                return result;
+            }
+            
+            if (computerTurn === "Rock") {
+                if (userTurn === "Paper") {
+                    winner = "User";
+                    result = result + `${winner}`;
+                    return result;
+                } 
+                if (userTurn === "Scissors") {
+                    winner = "Computer";
+                    result = result + `${winner}`;
+                    return result;
+                }
+            }
+            
+            if (computerTurn === "Paper") {
+                if (userTurn === "Rock") {
+                    winner = "Computer";
+                    result = result + `${winner}`;
+                    return result;
+                } 
+                if (userTurn === "Scissors") {
+                    winner = "User";
+                    result = result + `${winner}`;
+                    return result;
+                }
+            }
+
+            if (computerTurn === "Scissors") {
+                if (userTurn === "Rock") {
+                    winner = "User";
+                    result = result + `${winner}`;
+                    return result;
+                }
+                if (userTurn === "Paper") {
+                    winner = "Computer";
+                    result = result + `${winner}`;
+                    return result;
+                } 
+            }
+        }
+
+        console.log(play());
+    </script>
+</body>
+
+</html>
