@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(-45deg, #00e1d4, #f2bbf4, #ffe94a);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Start game view styling */
+.start-game-button .start-game-button-styling {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: mediumslateblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(103, 93, 154);
+}
+
+.game-button:hover {
+    background-color: rgb(105, 84, 224);
+}
+
+.game-button:active {
+    box-shadow: 0 5px rgb(73, 65, 113);
+    transform: translateY(4px);
+}
+
+/* User choice view styling */
+.user-choice {
+    display: none;
+}
+
+.user-choice .user-choice-styling {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-choice .user-choice-styling h2 {
+    font-size: 36px;
+}
+
+.user-choice .user-choice-styling .choices-container {
+    margin-top: 80px;
+}
+
+.user-choice .user-choice-styling .choices-container img {
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Game body view styling */
+.game-body {
+    display: none;
+}
+
+.game-body h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 60px;
+    margin-bottom: 16px;
+}
+
+.game-body .game-score {
+    text-align: center;
+}
+
+.game-body .players-container {
+    display: flex;
+}
+
+.game-body .players-container .user-container {
+    flex-grow: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-body .players-container .user-container p {
+    align-self: flex-end;
+}
+
+.game-body .players-container h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.game-body .players-container img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius: 50%;
+}
+
+.game-body .players-container h3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.game-body .players-container .computer-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-body .players-container .computer-container p {
+    align-self: flex-start;
+}
+
+.game-body .try-again-button {
+    display: flex;
+    justify-content: center;
+}
