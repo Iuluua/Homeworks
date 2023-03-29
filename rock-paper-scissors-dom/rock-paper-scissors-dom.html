@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/rock-paper-scissors.css">
+</head>
+
+<body>
+    <div class="start-game-button">
+        <div class="start-game-button-styling">
+            <input class="game-button" type="button" value="Start Game" onclick="startGame()">
+        </div>
+    </div>
+
+
+    <div class="user-choice">
+        <div class="user-choice-styling">
+            <h2>It is your turn! Choose an option</h2>
+            <div class="choices-container">
+                <img id="rockImage" src="images/rock-img.png">
+                <img id="paperImage" src="images/paper-img.png">
+                <img id="scissorsImage" src="images/scissors-img.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="game-body">
+        <h1></h1>
+        <h2 class="game-score">Score</h2>
+        <div class="players-container">
+            <div class="user-container">
+                <p></p>
+                <h2>Your Choice</h2>
+                <img>
+                <h3></h3>
+            </div>
+
+            <div class="computer-container">
+                <p></p>
+                <h2>Computer's Choice</h2>
+                <img>
+                <h3></h3>
+            </div>
+        </div>
+        <div class="try-again-button">
+            <input class="game-button" type="button" onclick="tryAgain()" value="Try Again">
+        </div>
+    </div>
+    <script src="scripts/rock-paper-scissors.js"></script>
+</body>
+
+</html>
