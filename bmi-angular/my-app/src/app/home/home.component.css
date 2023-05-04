@@ -1,0 +1,11 @@
+.patient-container {
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 8px 12px;
+}
+
+.patient-container .patient-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+<ng-container *ngFor="let patient of patients; let i = index">
+    <div class="patient-container" [style.background-color]="patientsStatus[i].statusColor">
+        <div class="patient-info-container">
+            <p>{{ patient.name }} - {{ patientsStatus[i].status }}</p>
+            <button (click)="showMoreDetails(i)">More Details</button>
+        </div>
+
+        <div *ngIf="moreDetails[i]">
+            <p>{{ patient.name }} - {{ patient.weight }} kg</p>
+            <p>BMI: {{ patientsBmi[i] }}</p>
+            <p>{{ patientsStatus[i].status }} - {{ patientsStatus[i].statusDescription }}</p>
+        </div>
+    </div>
+</ng-container>
